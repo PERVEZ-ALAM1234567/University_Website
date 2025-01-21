@@ -1,6 +1,6 @@
 # University Admission and Online Exam Platform
 
-Welcome to the University Admission and Online Exam Platform! This website provides a comprehensive solution for students to apply for admissions, access study materials, take exams, and download results—all online. With modern features and engaging animations, it offers an intuitive experience for users.
+Welcome to the My University. It has a features like Admission and Online Exam Platform! This website provides a comprehensive solution for students to apply for admissions, access study materials, take exams, and download results—all online. With modern features and engaging animations, it offers an intuitive experience for users.
 
 ## Features
 
