@@ -60,7 +60,7 @@ A dedicated section provides detailed information about all available courses. T
 
 - **Frontend**: HTML, CSS, JavaScript (with modern animations and dynamic features)
 - **Backend**: PHP
-- **Database**: MySQL / MongoDB
+- **Database**: MySQL
 - **PDF Generation**: Libraries for creating and managing PDF files
 - **Security**: OAuth2 for secure authentication and HTTPS for encrypted connections
 
