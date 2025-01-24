@@ -71,3 +71,9 @@ Follow these steps to set up the project locally:
 1. **Clone the repository**:
    ```bash
    git clone (https://github.com/PERVEZ-ALAM1234567/University_Website.git)
+
+---
+
+## Summary  
+
+The **University Platform** is more than just a website — it’s a transformative educational tool. By combining advanced features like personalized notes, animations, global access, and admin-specific tools, it redefines how universities interact with students and manage their operations. This project sets itself apart by focusing on functionality, innovation, and a superior user experience.
