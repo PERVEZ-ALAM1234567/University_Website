@@ -1,0 +1,216 @@
+
+/* Resetting default browser styles for consistent appearance across all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Overall body styling with font, layout, and background gradient */
+body {
+    font-family: 'Arial', sans-serif; /* Setting a readable sans-serif font */
+    display: flex; /* Enables flexbox for body layout */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    min-height: 100vh; /* Ensures the body takes full viewport height */
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364, #23556b);
+    /* background: linear-gradient(135deg, #6a11cb, #2575fc);  Adds a gradient background  */
+    color: #ffffff; /* Sets text color to white for better contrast */
+    text-align: center; /* Centers all text */
+}
+
+/* HEADER NAV BAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+    background: linear-gradient(to bottom, #7ec0dd, #203a43, #2c5364, #23556b);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps the navbar above other content */
+}
+
+header .logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 5px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: aqua;
+    background-color: rgba(148, 247, 165, 0.2);
+    transform: translateY(-5px);
+}
+
+.navbar ul li a:active {
+    transform: translateY(2px);
+}
+
+.toggle-btn {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto; /* Moves the toggle button to the right */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-start; /* Align links to the left */
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .navbar.active ul {
+        max-height: 300px; /* Adjust as needed for menu height */
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Header styling for the main title */
+h1 {
+    font-size: 2.5rem; /* Large font size for emphasis */
+    margin-bottom: 1.5rem; /* Adds spacing below the title */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for better visibility */
+}
+
+/* Container for questions */
+#questions {
+    width: 90%; /* Makes the container responsive */
+    max-width: 600px; /* Restricts the maximum width */
+    padding: 1.5rem; /* Adds inner spacing */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for contrast */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for depth */
+    margin-bottom: 1rem; /* Spacing below the container */
+}
+
+/* Question text styling */
+#questions p {
+    font-size: 1.2rem; /* Increases readability */
+    margin-bottom: 1rem; /* Spacing below the question text */
+}
+
+/* Unordered list styling inside the questions container */
+#questions ul {
+    list-style-type: none; /* Removes default bullet points */
+}
+
+/* Styling for each question option (list item) */
+#questions li {
+    margin-bottom: 1rem; /* Adds spacing between options */
+    display: flex; /* Aligns radio buttons and labels horizontally */
+    align-items: center; /* Ensures vertical alignment */
+}
+
+/* Styling for radio buttons */
+#questions input[type="radio"] {
+    margin-right: 15px; /* Space between radio button and its label */
+    width: 20px; /* Makes the radio button larger */
+    height: 20px; /* Matches the width for a square shape */
+}
+
+/* Styling for the "Next" button */
+#next {
+    background: #ffffff; /* White background for contrast */
+    color: #1271ff; /* Button text color matching the theme */
+    border: none; /* Removes default border */
+    padding: 0.8rem 2.5rem; /* Adds inner spacing */
+    font-size: 1rem; /* Standard font size */
+    border-radius: 25px; /* Rounds the button edges */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the "Next" button */
+#next:hover {
+    transform: translateY(-7px); /* Smooth upward movement */
+    box-shadow: 0 60px 100px rgba(0, 0, 0, 0.9); /* Enhanced shadow on hover */
+    background: linear-gradient(45deg, #7bc7a4, #09ff00); /* Reverse gradient */
+    font-weight: bold;
+    color: hotpink;
+}
+
+/* Result container styling */
+#result {
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Restricts the maximum width */
+    padding: 1.5rem; /* Inner spacing */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin-top: 1rem; /* Spacing above the result container */
+    color: #ffeb3b; /* Bright yellow text color */
+    font-size: 1.5rem; /* Larger font size for emphasis */
+    font-weight: bold; /* Bold text for importance */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Header adjustments for smaller screens */
+    h1 {
+        font-size: 2rem; /* Smaller font size for better fit */
+    }
+
+    /* Adjustments for question and result containers */
+    #questions, #result {
+        padding: 1rem; /* Reduces padding for smaller screens */
+    }
+
+    /* Button adjustments */
+    #next {
+        padding: 0.6rem 1.2rem; /* Smaller padding */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+}
