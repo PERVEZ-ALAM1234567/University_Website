@@ -77,3 +77,7 @@ Follow these steps to set up the project locally:
 ## Summary  
 
 The **University Platform** is more than just a website — it’s a transformative educational tool. By combining advanced features like personalized notes, animations, global access, and admin-specific tools, it redefines how universities interact with students and manage their operations. This project sets itself apart by focusing on functionality, innovation, and a superior user experience.
+
+---
+
+Feel free to contribute, suggest new features, or report any issues by creating an issue or a pull request.
