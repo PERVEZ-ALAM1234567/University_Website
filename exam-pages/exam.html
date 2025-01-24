@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAM</title>
+    <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+    <!-- HEADER STARTS HERE -->
+    <header>
+        <div class="logo">UNIVERSITY</div>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About us</a></li>
+                <li><a href="../pages/courses.html">Courses</a></li>
+                <li><a href="../pages/service.html">Services</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a href="../exam-pages/exam.html">Exam</a></li>
+            </ul> 
+        </nav>
+    </header> <!-- HEADER ENDS HERE -->
+
+        <section class="container">
+            <h1>Online Exam</h1>
+        </section>
+        <section>
+            <a href="../exam-pages/gk_exam/gk_exam.html">GENERAL KNOWLEDGE EXAM</a>
+        </section>
+        <section>
+            <a href="../exam-pages/c_exam/c_exam.html">C EXAM</a>
+        </section>
+
+    <!-- FOOTER STARTS HERE -->
+    <footer>
+        <p>&copy; University</p>
+    </footer> <!-- FOOTER ENDS HERE -->
+    
+    <script>
+        function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
