@@ -1,0 +1,102 @@
+﻿1,Which of the following are not standard header files in C?,stdio.h,stdlib.h,conio.h,None of the above.,None of the above.
+2,Which of the following function is used to open a file in C++?,fopen,fclose,fseek,fgets,fopen
+3,Which of the following is an exit controlled loop?,While loop.,For loop.,do-while loop.,None of the above.,do-while loop.
+4,"How many bytes does ""int = D"" use? ",1,0,10,2&4,2&4
+5,How to declare a double-pointer in C?,int **val, int *val,int **val,int &val,int **val
+6,What is the size of the int data type (in bytes) in C?,4,8,1,2,4
+7,How are String represented in memory in C?,An Array of characters, Linked list of characters,The object of some class,Some as other primitive data types,An Array of characters
+8,Which of the following is the proper syntax for declaring macros in C?,#define long long ll,#define ll long long,#define ll,#define long long,#define ll long long
+9,Which of the following should be used to free memory from a pointer allocated using the “new” operator?,free(),delete,realloc(),None of the above.,delete
+10,How are String represented in memory in C?,An array of characters.,The object of some class.,Same as other primitive data types.,LinkedList of characters.,An array of characters.
+11,How is an array initialized in C language?,"int a[3] = {1, 2, 3};","int a = {1, 2, 3};",int a[] = new int[3],"int a(3) = [1, 2, 3];","int a[3] = {1, 2, 3};"
+12,How is the 3rd element in an array accessed based on pointer notation?,*a + 3,*(a + 3),*(*a + 3),*(a+3)&(a + 3),*(a + 3)
+13,How to declare a double-pointer in C?,int *val,int **val,int &val,int *&val,int **val
+14,How to find the length of an array in C?,sizeof(a[0]),sizeof(a) / sizeof(a[0]),sizeof(a) * sizeof(a[0]),sizeof(a),sizeof(a) / sizeof(a[0])
+15,"If p is an integer pointer with a value 1000, then what will the value of p + 5 be?",1020,1005,1004,1010,1020
+16,In which of the following languages is function overloading not possible?,C,C++,Java,Python,C
+17,"What does the following declaration indicate?int x: 8;
+",x stores a value of 8.,x is an 8-bit integer.,x is an 8-bit integer.& x stores a value of 8.,None of the above.,x is an 8-bit integer.
+18,What is the disadvantage of arrays in C?,The amount of memory to be allocated should be known beforehand.,Elements of an array can be accessed in constant time.,Elements are stored in contiguous memory blocks.,Multiple other data structures can be implemented using arrays.,A.The amount of memory to be allocated should be known beforehand.
+19, What is the range of values that can be stored by int datatype in C?,-(2^31) to (2^31) - 1,-256 to 255,-(2^63) to (2^63) - 1,0 to (2^31) - 1,-(2^31) to (2^31) - 1
+20,What is the return type of the fopen() function in C?,Pointer to a FILE object.,An integer.,Pointer to an integer.,An double,Pointer to a FILE object.
+21,How to declare a double-pointer in C?,int **val, int *val,int **val,int &val,int **val
+22,What is the size of the int data type (in bytes) in C?,4,8,2,1,4
+23, ,Charles Babbage ,Grahambe, Steve , Dennis Ritchie,Dennis Ritchie
+24,C Language is a successor to which language.?,FORTRAN,B Language,BASIC,Language,B Language
+25,C is a which level language.?,Midium,Low ,High,None,High
+26,Low level language is .? Human readable like language. ,Human readable like language. ,Difficult to understand and readability is questionable.,language with big program size.,language with small program size.,B.Difficult to understand and readability is questionable.
+27,C is _______ type of programming language.?,Bit level language,Procedural,Object Oriented,Functional,B.Procedural
+28,What is the present C Language Standard.? ,C99 ISO/IEC 9899:1999 ,C11 ISO/IEC 9899:2011 ,C05 ISO/IEC 9899:2005,C10 ISO/IEC 9899:2010,B.C11 ISO/IEC 9899:2011
+29,What are the new features of C11 or ISO IEC 9899 2011 standard.?,"Type generic Macros, Static Assertions","Multi Threading, Anonymous Unions, quick_exit","Bounds Checking Interfaces, Anonymous Strurctures",All,D.All
+30,C language was invented in which laboratories.?,Verizon Labs,Uniliver Labs,AT&T Bell Labs,IBM Labs,C.AT&T Bell Labs
+31,BCPL Language is also called..?,D Language,B Language,C Language,None,C.None
+32,C language was invented to develop which Operating System.?,Android,Unix,Linux,Ubuntu,B.Unix
+33,C language was invented in the year.?,1999,1990,1972,1978,C.1972
+34,C language is used in the development of .?,Databases,Word Processors,Word Processors,All of the above,D.All of the above
+35,A C program is a combination of.?,Statements,Functions,Variables,All of the above,D.All of the above
+36,Correct way of commenting a single line is.?,"//printf(""Hello C..""); printf(""How are you."");","/*printf(""Hello C..""); printf(""How are you."");","/*printf(""Hello C..""); printf(""How are you."");*/","//printf(""Hello C.."");/ printf(""How are you."");","A.//printf(""Hello C..""); printf(""How are you."");"
+37,Single Line Comment // is also called.?,PHP Style Comment,Java Style Comment,C++ Style Comment,All the above,D.All the above
+38,Choose the correct answer.?,Digraph represents [ Digraph reprsents { Digraph %: represents $ Digraph %:%: represents $$,Digraph represents ] Digraph reprsents } Digraph %: represents # Digraph %:%: represents ##,) Digraph represents } Digraph reprsents ] Digraph %: represents / Digraph %:%: represents //,Digraph represents [ Digraph reprsents } Digraph %: represents # Digraph %:%: represents ##,B.Digraph represents ] Digraph reprsents } Digraph %: represents # Digraph %:%: represents ##
+39,What is an Identifier in C Language.?,Name of a Function or Variable,Name of a Macros,Name of Structure or Union,All the above.,D.All the above.
+40,An Identifier may contain.?,"Letters a-z, A-Z in Basic character set. Unicode alphabet characters other languages",Underscore _ symbol,Numbers 0 to 9 Unicode Numbers in other languages,All the above,D.All the above
+41,What is the number of characters used to distinguish Identifier or Names of Functions and Global variables.?,28,33,31,32,C.31
+42,What is length of an Identifier that is unique for Non Global Variables and Non Function Names.?,63,93,92,65,A.63
+43,An Identifier can start with.?,Alphabet,Option A & Option B,Option A,Any character that can be typed on a keyboard,B.Option A & Option B
+44,C Programs are used in .?,"Fridge, Microwave Ovens",Washing machine,Any Electronic device which works on some logic and Operating System.,All the above.,D.All the above.
+45,Choose correct statements,A constant value does not change. A variable value can change according to needs.,A constant can change its values. A variable can have one constant value only.,value only,A constant can change its values. A variable can have one constant value only,A.A constant value does not change. A variable value can change according to needs.
+46,Find an integer constant.,34,3.145,"""125""",None of the above,A.34
+47,Find a Floating Point constant.,125.34857,1.20E+35,1230000,All the above.,D.All the above.
+48,Find a Character constant.,'A' 'a','1' '9','$' '#',All the above.,D.All the above.
+49,Choose a right statement.,"int myage = 10; int my,age = 10;",int myage = 10; int my_age = 10;,int myage = 10; int my age = 10;,All are right,B.int myage = 10; int my_age = 10;
+50,Number of Keywords present in C Language are .?,62,34,32,34,C.32
+51,Each statement in a C program should end with.?,Semicolon ;,Colon :,Period . (dot symbol),None of the above.,A.Semicolon ;
+52,Choose a correct statement.,C Compiler converts your C program into machine readable language.,C Editor allows you to type C Programs. It is just like a Notepad with extra options.,Console shows the output of a C Program if it is text output.,All the above,D.All the above
+53,Identify wrong C Keywords below.,"auto, double, int, struct","break, else, long, switch","case, enum, register, typedef","char, extern, intern, return","D.char, extern, intern, return"
+54,Identify wrong C Keywords below.,"union, const, var, float","short, unsigned, continue, for","signed, void, default, goto","sizeof, volatile, do, if","A.union, const, var, float"
+55,Identify wrong C Keywords below.,"static, while, break, goto","struct, construct, signed, unsigned","short, long, if, else","return, enum, struct, do","B.struct, construct, signed, unsigned"
+56,Find a correct C Keyword below.,breaker,go to,shorter,default,D.default
+57,Find a correct C Keyword.,Float,Int,Long,double,D.double
+58,Types of Integers are.?,short,int,long,All the above,D.All the above
+59,Types of Real numbers in C are.?,float,double,long double,All the above,D.All the above
+60,Size of a Turbo C C++ compiler is.?,16 bit,32 bit,64 bit,128 bit,A.16 bit
+61,Size of a GCC or Visual Studio C Compiler is.?,16 bit,32 bit,64 bit,128 bit,B.32 bit
+62,"Sizes of short, int and long in a Turbo C C++ compiler in bytes are.?","2, 2, 4","2, 4, 4","4, 8, 16","8, 8, 16","A.2, 2, 4"
+63,"Sizes of short, int and long in Visual Studio or GCC compiler in bytes are.?","2, 2, 4","2, 4, 4"," 4, 8, 8
+","4, 4, 8","2, 4, 2004"
+64,Range of signed char and unsigned char are.?,-128 to +127 0 to 255,128 to +127 0 to 255,-128 to -1 0 to +127,0 to +127 -128 to -1,A.-128 to +127 0 to 255
+65,Ranges of signed int and unsigned int are.?,0 to 65535 -32768 to +32767,-32768 to +32767 0 to 65535,-32767 to +32768 0 to 65536,0 to 65536 -32767 to +32768,B.-32768 to +32767 0 to 65535
+66,"Size of float, double and long double in Bytes are.?","4, 8, 16","4, 8, 16","4, 8, 16","4,8,10","D.4, 8, 10"
+67,Range of singed long and unsigned long variables are.?,-2147483647 to +2147483648 0 to 4294967295,-2147483648 to +2147483647 0 to 4294967296,-2147483648 to +2147483647 0 to 4294967295,0 to 4294967295 -2147483648 to +2147483647,C.2147483648 to +2147483647 0 to 4294967295
+68,Range of float variable is.?,-3.2e38 to +3.2e38,-3.8e32 to +3.8e32,-3.4e34 to +3.4e34,-3.4e38 to +3.4e38,D.-3.4e38 to +3.4e38
+69,Left most bit 0 in Singed representation indicates.?,A Positive number,A Negative Number,An Unsigned number,None of the above,C.A Positive number
+70,A Positive number,You get compiler error.,You get a compiler warning.,Output is null always,None of the above,D.None of the above
+71,What is a C Storage Class.?,C Storage decides where to or which memory store the variable,C Storage decides where to or which memory store the variable,C Storage Class decides what is the Scope and Life of a variable.,All the above.,D.All the above.
+72,Every C Variable must have.?,Type,Storage Class,Both Type and Storage Class,Either Type or Storage Class,C.Both Type and Storage Class
+73,Find a C Storage Class below.,static,auto,register & extern,All the above,D.All the above
+74,What is the default C Storage Class for a variable.?,static,auto,register,extern,B.auto
+75,A register variable is stored in a Register. Where does a Register Present in a Computer.?,RAM ( Random Access Memory ),ROM ( Read Only Memory ),CPU (Central Processing Unit ),DMA ( Direct Memory Access ),D.DMA ( Direct Memory Access )
+76,"Variables of type auto, static and extern are all stored in .?",ROM,RAM,CPU (Central Processing Unit ), Compiler,B.RAM
+77,Find a right answer.,Default value of auto variable = Garbage Value Default value of static = Garbage Value Default value of extern = Garbage Value Default value of register = Garbage Value,Default value of auto variable = zero Default value of static = zero Default value of extern = zero Default value of register = zero,Default value of auto variable = Garbage Default value of static = zero Default value of extern = zero Default value of register = Garbage,Default value of auto variable = zero Default value of static = Garbage Default value of extern = Garbage Default value of register = zero,Default value of auto variable = Garbage Default value of static = zero Default value of extern = zero Default value of register = Garbage
+78,Which among the following is a Local Variable.?,register,auto,static,extern,B.auto
+79,Which among the following is a Global Variable.?,auto,register,static,extern,D.extern
+80,Choose a correct statement about static variable.,A static global variable can be accessed in other files.,A static global variable can be used only in a file in which it is declared,A static global variable can be used only in a file in which it is declared,A static global variable can be used only in a file in which it is declared,D.A static global variable can be used only in a file in which it is declared.
+81,Choose right statement.,Variable a is stored in CPU registers for fast access.,Variable a is converted to int and then stored in a CPU register.,register Storage Class is ignored and treated as,You get a compiler error as you can not store non integer value in a CPU register.,C.register Storage Class is ignored and treated as
+82,What is the difference between Declaration and Definition.?,Declaration does allocate memory for a variable. Definition does allocate memory for a variable.,) Declaration does allocate memory for a variable. Definition does not allocate memory for a variable.,Declaration does not allocate memory for a variable. Definition does allocate memory for a variable.,Declaration does not allocate memory for a variable. Definition does not allocate memory for a variable,Declaration does not allocate memory for a variable. C.Definition does allocate memory for a variable.
+83,Operator % in C Language is called.?,Percentage Operator,Quotient Operator,Modulus,Division,C.Modulus
+84,Output of an arithmetic expression with integers and real numbers is ___ by default.?,Integer,Real number,Depends on the numbers used in the expression.,None of the above,B.Real number
+85,Choose a right statement. int a = 10 + 4.867;,a = 10,a = 14.867, a = 14,compiler error.,B.a = 14
+86,"If both numerator and denominator of a division operation in C language are integers, then we get.?",Expected algebraic real value,Expected algebraic real value,Compiler error.,None of the above,D.None of the above
+87,Can you use C Modulo Division operator % with float and int?,Only int variables = Okay,Only float variables = Okay,int or float combination = Okay,"Numerator int variable, Denominator any variable = Okay",A.Only int variables = Okay
+88,"What is the output of the program.? int main() { float a = 45; printf(""%f"", a); return 0; }",45,45,45,0,A.45
+89,"In C language, which Operator group has more priority between (*, / and %) and (+, -) groups.?",Both groups share equal priority.,"(+, -) > (*, / and %)","(+, -) < (*, / and %)",None of the above.,"C.(+, -) < (*, / and %)"
+90,"Associativity of C Operators *, /, %, +, - and = is.?","Operators *, / and % have Left to Right Associativity. Operators + and - have Left to Right Associativity. Operator = has Right to Left Associativitiy.","Operators *, / and % have Right to Left Associativity. Operators + and - have Left to Right Associativity. Operator = has Right to Left Associativitiy.","Operators *, / and % have Right to Left Associativity. Operators + and - have Right to Left Associativity. Operator = has Right to Left Associativitiy.","Operators *, / and % have Right to Left Associativity. Operators + and - have Right to Left Associativity. Operator = has Left to Right Associativitiy.","A.Operators *, / and % have Left to Right Associativity. Operators + and - have Left to Right Associativity. Operator = has Right to Left Associativitiy"
+91,") What is the Priority among (*, /, %), (+, -) and (=) C Operators.?","(*, /, %) > (+, -) < (=)","(*, /, %) < (+, -) < (=)","(*, /, %) > (+, -) > (=)","(*, /, %) < (+, -) (+, -) == (=)","C.(*, /, %) > (+, -) > (=)"
+92,"Which loop is faster in C Language, for, while or Do While.?",for,while,do while,All work at same speed,D.All work at same speed
+93,"What is the output of C Program.? int main() { while(true) { printf(""RABBIT""); break; } return 0; }",RABBIT,RABBIT is printed unlimited number of times.,No output,Compiler error.,D.Compiler error.
+94,"What is the output of C Program.? int main() { int k; for(;;) { printf(""TESTING\n""); break; }",No Output,TESTING,Compiler error,None of the above,B.TESTING
+95,") What is the output of C Program.? int main() { int a=10, b, c; b=a++; c=++a; printf(""%d %d %d"", a, b, c); return 0; }",10 11 12,12 10 12,12 11 12,12 12 12,B.12 10 12
+96,"What is the output of C Program.? int main() { int a=0, b=0; while(++a < 4) printf(""%d "", a); while(b++ < 4) printf(""%d "", b); return 0; }",0 1 2 3 1 2 3 4,1 2 3 1 2 3 4,1 2 3 4 1 2 3 4,1 2 3 4 0 1 2 3,B.1 2 3 1 2 3 4
+97,A function which calls itself is called a ___ function.,Self Function,Auto Function,Recursive Function,Static Function,C.Recursive Function
+98,"What is the output of C program with functions.? int show(); void main() { int a; a=show(); printf(""%d"", a); } int show() { return 15.5; return 35; }",15.5,15,0,Compiler error,B.15
+99,What are the data type of variables that can be returned by a C Function.?,"int, float, double, char","struct, enum","Pointers to variables, arrays, functions, struct variables, enum variables etc",All the above,D.All the above
+100,What is the output of C program.? int main() { char ch='A'; ch=getchar(); putchar(ch); return 0; }//input= S,A,B,S,Compiler error,C.S
