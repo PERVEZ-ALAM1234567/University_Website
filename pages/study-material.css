@@ -1,0 +1,258 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    /* padding-top: 70px; */
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #6a89cc, #78e08f);
+    background-size: 300% 300%;
+    animation: gradientAnimation 4s ease infinite;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 3D gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header Styles */
+/* Fixed header that remains at the top of the page */
+header {
+    display: flex; /* Aligns logo and navbar side-by-side */
+    justify-content: space-between; /* Positions logo and navbar at opposite ends */
+    align-items: center; /* Vertically centers the items inside the header */
+    padding: 8px 30px; /* Adds space inside the header for better appearance */
+    background: linear-gradient(45deg, #15ff00, #05adf5, #ff00f2); /* Gradient background for header */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds shadow for a floating effect */
+    position: fixed; /* Keeps the header fixed at the top */
+    top: 0; /* Positions the header at the top of the viewport */
+    width: 100%; /* Ensures the header spans the full width */
+    z-index: 1000; /* Ensures the header stays on top of other content */
+    height: 60px; /* Fixed height for consistent layout */
+}
+
+header .logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: aqua;
+    background-color: rgba(148, 247, 165, 0.2);
+    transform: translateY(-5px);
+}
+
+.navbar ul li a:active {
+    transform: translateY(2px);
+}
+
+.toggle-btn {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto; /* Moves the toggle button to the right */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .navbar.active ul {
+        max-height: 300px; /* Adjust as needed for menu height */
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+.welcome-container {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+    /* border-color: whitesmoke; */
+    box-shadow: 5px 9px 6px rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid #ddd; /* Optional: Adds a bottom border */
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #006eff, #d0ff00, #26076e,  #c300ffb4);
+    background-clip: text;
+    /* font-weight: bold; */
+    -webkit-background-clip: text; /* For Safari compatibility */
+    color: transparent; /* Hides the background behind the text */
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pdf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 10px 9px 20px rgba(204, 201, 4, 0.89);
+}
+
+.pdf-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pdf-preview img {
+    width: 50px;
+    height: 50px;
+}
+
+.pdf-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.pdf-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+#download-btn {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 20px;
+    background: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#download-btn:hover {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #6a89cc, #78e08f);
+    transform: translateY(-5px);
+    text-transform: uppercase;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-container {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pdf-container {
+        width: 100%;
+    }
+}
+
+/* Footer Styles */
+/* Footer stays at the bottom of the page */
+footer {
+    background-color: #333; /* Dark background for contrast */
+    color: whitesmoke; /* Light text for readability */
+    text-align: center; /* Centers text horizontally */
+    padding: 20px 0; /* Adds vertical spacing inside the footer */
+    width: 100%; /* Ensures the footer spans the full width of the page */
+    margin-top: auto;
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 480px) {
+
+    footer {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

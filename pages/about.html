@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <!-- HEADER STARTS HERE -->
+    <header>
+        <div class="logo">UNIVERSITY</div>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About us</a></li>
+                <li><a href="../pages/courses.html">Courses</a></li>
+                <li><a href="../pages/service.html">Services</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a href="../exam-pages/exam.html">Exam</a></li>
+                <li id="adminOption"  class="has-submenu" style="display: none;">
+                    <a href="#">Admin</a><i class="fa-solid fa-angle-down"></i>
+                    <ul class="sub-menu">
+                        <li><a href="pages/gen_question.html">SET QUESTION PAPER</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </nav>
+    </header> <!-- HEADER ENDS HERE -->
+
+    <section class="first_section">
+        <h3>About us</h3>
+        <p>We are a leading university with a rich history, with a passion for teaching, and a commitment to quality. Our vision is to be the best university in the world.</p>
+    </section>
+
+    <section>
+        <h3>Our mission</h3>
+        <p>To provide top-quality education to our students, and to inspire them to be passionate and committed to their futures.</p>
+    </section>
+
+    <section>
+        <h3>Our vision</h3>
+        <p>To be the best university in the world.</p>
+    </section>
+
+    <section>
+        <h3>Our values</h3>
+        <ul>
+            <li>Integrity</li>
+            <li>Quality</li>
+            <li>Innovation</li>
+            <li>Excellence</li>
+        </ul>
+    </section>
+
+    <!-- FOOTER STARTS HERE -->
+    <footer>
+        <p>&copy; 2025 University</p>
+    </footer> <!-- FOOTER ENDS HERE -->
+
+    <script>
+        function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
