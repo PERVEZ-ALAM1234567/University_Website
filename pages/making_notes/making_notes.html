@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKE YOUR NOTES</title>
+    <link rel="stylesheet" href="making_notes.css">
+</head>
+<body>
+    <header>
+        <div class="logo">UNIVERSITY</div>
+        <button class="toggle-btn" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">About us</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="../service.html">Services</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../../exam-pages/exam.html">Exam</a></li>
+            </ul> 
+        </nav>
+    </header> 
+    <main>
+        <h1>MAKE YOUR NOTES</h1>
+        <div class="input-container">
+            <form id="taskForm" onsubmit="event.preventDefault(); addTask();">
+                <textarea id="taskInput" placeholder="Add a task" required></textarea>
+                <button class="add-btn" type="submit">Add</button>
+            </form>
+        </div>
+        <ol id="taskList"></ol>
+    </main>
+
+    <!-- FOOTER STARTS HERE -->
+    <footer>
+        <p>&copy; 2025 University</p>
+    </footer> 
+    <!-- FOOTER ENDS HERE -->
+     
+    <script src="making_notes.js"></script>
+    <script>
+        function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

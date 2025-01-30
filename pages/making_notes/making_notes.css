@@ -1,0 +1,250 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(45deg, #3a6577, #23353b, #2c5364);
+    background-size: 300% 300%;
+    animation: gradientAnimation 2s ease infinite;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 3D gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+    background: linear-gradient(45deg, #3a6577, #23353b, #2c5364);
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+header .logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative; /* Ensures submenu is positioned relative to its parent */
+    margin: 5px;
+}
+
+.navbar ul li a {
+    /* background-color: black; */
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    border-radius: 5px;
+    /* z-index: 10; */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: aqua;
+    background-color: rgba(148, 247, 165, 0.4);
+    transform: translateY(-5px);
+    /* z-index: 10; */
+}
+
+/* Toggle Button */
+.toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.toggle-btn span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .toggle-btn {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #000000;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        text-align: left;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+
+/* MAIN NOTES SECTION START */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: aqua;
+}
+
+/* Adjust <ol> and <li> styles */
+/* Task List */
+ol {
+    list-style-type: none;
+    padding: 0;
+    max-width: 80%; /* Limit the width of the list */
+    margin: 0 auto; /* Center the list */
+    width: 100%;
+  }
+  
+  ol li {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for content inside the list item */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    word-break: break-word; /* Ensure long words break into the next line */
+  }
+  
+  ol li span {
+    flex-grow: 1; /* Allow the text to take up available space */
+    word-break: break-word; /* Break long words into the next line */
+    line-height: 1.5; /* Add better spacing between lines for readability */
+  }
+  
+  ol li button {
+    flex-shrink: 0; /* Prevent the button from shrinking */
+    margin-left: 10px; /* Add spacing between text and button */
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  ol li button:hover {
+    background-color: darkred;
+}  
+
+textarea {
+    border: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 17px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.9);
+}
+
+textarea:focus {
+    background-color: #e6edf8;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+}
+
+.add-btn {
+    border: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #7af37e; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 30px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.add-btn:hover {
+    background-color: #00ff0d; /* Darker green on hover */
+}
+
+
+/* MAIN NOTES SESSION FINISH */
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 20px 0 20px;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    footer {
+        padding: 10px;
+    }
+}
