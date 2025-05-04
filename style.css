@@ -1,0 +1,708 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #6a89cc, #78e08f);
+    background-size: 300% 300%;
+    animation: gradientAnimation 2s ease infinite;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 3D gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+    background: linear-gradient(45deg, #15ff00, #05adf5, #ff00f2);
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+header .logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative; /* Ensures submenu is positioned relative to its parent */
+    margin: 5px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    border-radius: 5px;
+    /* z-index: 10; */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: aqua;
+    background-color: rgba(148, 247, 165, 0.4);
+    transform: translateY(-5px);
+    /* z-index: 10; */
+}
+
+/* Submenu Styles */
+.navbar ul li.has-submenu ul.sub-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Positions submenu directly below parent */
+    right: 0; /* Aligns submenu to the left of the parent */
+    background-color: #444;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 230px;
+    /* z-index: 10; */
+}
+
+.navbar ul li.has-submenu:hover ul.sub-menu {
+    display: block; /* Show submenu on hover */
+    /* z-index: 10; */
+}
+
+.navbar ul li.has-submenu ul.sub-menu li {
+    padding: 5px 20px;
+    /* z-index: 10; */
+}
+
+.navbar ul li.has-submenu ul.sub-menu li a {
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+    /* z-index: 10; */
+}
+
+.navbar ul li.has-submenu ul.sub-menu li a:hover {
+    color: aquamarine;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* z-index: 10; */
+}
+
+/* Toggle Button */
+.toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.toggle-btn span {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .toggle-btn {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #000000;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        text-align: left;
+    }
+
+
+    .navbar ul li.has-submenu ul.sub-menu {
+        position: relative; /* Ensures submenu stays below the parent */
+        display: none; /* Hidden by default */
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .navbar ul li.has-submenu:hover ul.sub-menu {
+        display: block; /* Show submenu on hover */
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+
+/* General Button Styling */
+button {
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease; /* Smooth animations */
+}
+
+/* Log In Button */
+#log-in-btn {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4767f3;
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+}
+
+#log-in-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg, #00ff37, #58928d);
+}
+
+/* LOG OUT BUTTON */
+#log-out-btn {
+    position: absolute;
+    top: 130px;
+    right: 20px;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #f34747;
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+}
+
+#log-out-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg, #f176a5, #e4b3b3);
+}
+/* Sign Up Button */
+#sign-up-btn {
+    position: absolute;
+    top: 70px;
+    right: 130px;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4767f3;
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+}
+
+#sign-up-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg, #00ff37, #58928d);
+}
+
+/* Notes Button */
+#notes-btn {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4767f3;
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+}
+
+#notes-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(45deg, #ff0000, #7df8ee, #8c00ff);
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+    #log-in-btn, #log-out-btn, #sign-up-btn, #notes-btn {
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #log-in-btn, #log-out-btn, #sign-up-btn, #notes-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    #log-in-btn, #log-out-btn, #sign-up-btn, #notes-btn {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+    #log-in-btn {
+        right: 10px;
+    }
+    #sign-up-btn {
+        right: 110px;
+    }
+    #notes-btn {
+        left: 20px;
+    }
+    #log-out-btn {
+        top: 100px;
+        right: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    #log-in-btn, #sign-up-btn, #notes-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    #log-in-btn {
+        top: 60px;
+        right: 10px;
+    }
+    #sign-up-btn {
+        top: 60px;
+        right: 100px;
+    }
+    #notes-btn {
+        top: 60px;
+        left: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    #log-in-btn, #sign-up-btn, #notes-btn {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    #log-in-btn {
+        top: 50px;
+        right: 5px;
+    }
+    #sign-up-btn {
+        top: 50px;
+        right: 90px;
+    }
+    #notes-btn {
+        top: 50px;
+        left: 10px;
+    }
+}
+
+
+/* Welcome Section */
+.welcome-section div {
+    margin-top: 90px;
+    text-align: center;
+    color: white;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+}
+
+.welcome-section p {
+    font-size: 20px;
+}
+
+/* LEARN MORE BUTTON */
+#learn-more-btn {
+    margin: 30px;
+    padding: 10px 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4767f3;
+    cursor: pointer;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#learn-more-btn:hover {
+    transform: translateY(-7px); /* Smooth upward movement */
+    box-shadow: 0 10px 3px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+    background: linear-gradient(45deg, #38ada9, #78e08f); /* Reverse gradient */
+}
+
+/* APPLY FOR ADMISSION BUTTON */
+#admission-btn {
+    margin: 30px;
+    padding: 10px 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #00ff40;
+    cursor: pointer;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#admission-btn:hover {
+    transform: translateY(-7px); /* Smooth upward movement */
+    box-shadow: 0 10px 3px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364, #ff0000);
+}
+
+/* TRAINED YOURSELF BUTTON  */
+#study-material-btn {
+    margin: 30px;
+    padding: 10px 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #00ff40;
+    cursor: pointer;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#study-material-btn:hover {
+    transform: translateY(-7px); /* Smooth upward movement */
+    box-shadow: 0 10px 3px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+    background: linear-gradient(to bottom, #180b0c, #3cbff7, #030305);
+}
+
+/* GLIMPSE */
+#glimpse {
+    background: linear-gradient(45deg, #006eff, #d0ff00, #26076e,  #c300ffb4);
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari compatibility */
+    color: transparent; /* Hides the background behind the text */
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 40px;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transform: translateY(-5px); /* Smooth upward movement */
+    border-radius: 5px; /* Rounded corners for list items */
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.9); /* Subtle shadow */
+}
+
+/* Flex Container for Divs */
+.container {
+    margin: 100px 20px 50px 20px;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.container img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: all ease-in-out 0.5s;
+}
+
+.container img:hover {
+    width: 70%;
+}
+
+/* NOTICE BOARD */
+
+.notice-board-container {
+    margin: 10px;
+    padding: 10px;
+    width: 70%;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    background-size: 300% 300%;
+    animation: gradientAnimation 4s ease infinite;
+    font-family: 'Arial', sans-serif;
+    border: 3px solid #6dd5ed;
+    border-radius: 20px;
+}
+
+.notice-board h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px #ffffff;
+}
+
+.notice-board-container ul li {
+    list-style: none;
+    padding: 6px;
+    padding-right: 6px;
+    font-size: 20px;
+    margin: 10px;
+    border: 2px solid #6dd5ed;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notice-board-container ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.notice-board-container ul li:hover {
+    transform: translateY(-5px); /* Smooth upward movement */
+    box-shadow: 30px 60px 100px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+    background: linear-gradient(45deg, #38ada9, #78e08f);
+}
+
+.print-btn {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4767f3;
+    cursor: pointer;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.print-btn:hover {
+    transform: translateY(-5px); /* Smooth upward movement */
+    box-shadow: 30px 60px 100px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+    background: linear-gradient(45deg, #5521ce, #ff0000, #2bff00);
+}
+
+.print-btn:active {
+    background-color: #00eeff75; /* Button color on active state */
+    transform: translateY(0); /* No movement on active state */
+}
+
+.print-btn:focus {
+    outline: none;
+}
+
+.print-btn {
+    margin-left: auto;
+}
+
+/* Flexbox for buttons */
+.button-container {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Positions buttons on opposite sides */
+    align-items: center; /* Ensures vertical alignment */
+    gap: 20px; /* Adds space between buttons */
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+}
+
+/* View All Button */
+#view-all-btn {
+    flex: 1; /* Allows buttons to scale evenly */
+    margin: 10px;
+    padding: 10px 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4767f3;
+    cursor: pointer;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#view-all-btn:hover {
+    transform: translateY(-7px); /* Smooth upward movement */
+    box-shadow: 0 60px 100px rgba(0, 0, 0, 0.9); /* Enhanced shadow on hover */
+    background: linear-gradient(45deg, #ad386f, #ff0000); /* Reverse gradient */
+}
+
+/* Print Button */
+#print-btn {
+    flex: 1; /* Allows buttons to scale evenly */
+    margin: 10px;
+    padding: 10px 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4767f3;
+    cursor: pointer;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#print-btn:hover {
+    transform: translateY(-7px); /* Smooth upward movement */
+    box-shadow: 0 60px 100px rgba(0, 0, 0, 0.9); /* Enhanced shadow on hover */
+    background: linear-gradient(45deg, #ad386f, #ff0000); /* Reverse gradient */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Stacks buttons vertically */
+        align-items: center; /* Makes buttons take Center NOT full width (Strech) */
+    }
+
+    #view-all-btn, #print-btn {
+        flex: none; /* Reset flex property for smaller screens */
+        width: 80%; /* Make buttons full width */
+    }
+}
+
+#feedback-btn {
+    margin-left: auto; /* Automatically moves the button to the right */
+    display: block; /* Make it a block element to use margin-left: auto */
+    padding: 10px 60px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4767f3;
+    cursor: pointer;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Centers the text inside the button */
+}
+
+#feedback-btn:hover {
+    transform: translateY(-7px); /* Smooth upward movement */
+    box-shadow: 0 60px 100px rgba(0, 0, 0, 0.9); /* Enhanced shadow on hover */
+    background: linear-gradient(45deg, #ad386f, #ff0000); /* Reverse gradient */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 20px 0 20px;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .container .box {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container .box {
+        width: 100%;
+        height: 250px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .welcome-section h1 {
+        font-size: 28px;
+    }
+
+    .welcome-section p {
+        font-size: 16px;
+    }
+
+    .container .box {
+        width: 100%;
+        height: 200px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

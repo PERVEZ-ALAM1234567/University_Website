@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UNIVERSITY">
+    <meta name="keywords" content="UNIVERSITY, HTML, CSS, JavaScript">
+    <meta name="author" content="Your Name">
+    <title>UNIVERSITY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon (Improves Branding) -->
+    <!-- <link rel="icon" type="course-pic\images.jpeg"> -->
+</head>
+
+<body>
+    <!-- HEADER STARTS HERE -->
+    <header>
+        <div class="logo">UNIVERSITY</div>
+        <button class="toggle-btn" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="pages/about.html">About us</a></li>
+                <li><a href="pages/courses.html">Courses</a></li>
+                <li><a href="pages/service.html">Services</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="exam-pages/exam.html">Exam</a></li>
+                <li id="adminOption"  class="has-submenu" style="display: none;">
+                    <a href="#">Admin</a><i class="fa-solid fa-angle-down"></i>
+                    <ul class="sub-menu">
+                        <li><a href="pages/gen_question.html">SET QUESTION PAPER</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- MAKING NOTES -->
+    <button id="notes-btn" onclick="location.href='pages/making_notes/making_notes.html';">MAKE YOUR NOTES</button>
+
+    <!-- LOG IN BUTTON -->
+    <button id="log-in-btn" onclick="location.href='pages/log-in.html';">LOG IN</button>
+    
+    <!-- LOG OUT BUTTON -->
+    <button id="log-out-btn" onclick="location.href='pages/log-out.php';">LOG OUT</button>
+
+    <!-- SIGN UP BUTTON -->
+    <button id="sign-up-btn" onclick="location.href='pages/sign-up.html';">SIGN UP</button>
+
+    <!-- MAIN CONTENT STARTS HERE -->
+    <main>
+        <section class="welcome-section">
+            <div>
+                <h1>Welcome to Our University</h1>
+                <p>Explore our courses, services, and more !</p>
+            </div>
+        </section>
+    </main> <!-- MAIN CONTENT ENDS HERE -->
+    
+    <!-- LEARN MORE BUTTON -->
+    <button id="learn-more-btn" onclick="location.href='pages/service.html';">LEARN MORE</button>
+
+    <!-- ADMISSION BUTTON -->
+    <button id="admission-btn" onclick="location.href='pages/admission_form.html';">APPLY NOW FOR ADMISSION</button>
+
+    <!-- TRAINING BUTTON -->
+    <button id="study-material-btn" onclick="location.href='pages/study-material.html';">STUDY MATERIAL</button>
+    
+    <!-- FACULTY -->
+     
+    <!-- Glimpse -->
+    <section id="glimpse">
+        <p>A small Glimpse of our University</p>
+    </section>
+
+    <!-- FLEX CONTAINER FOR DIVS -->
+    <div class="container">
+        <img src="university_picture/pexels-droosmo-2982449.jpg" alt="">
+        <img src="university_picture/pexels-fauxels-3184432.jpg" alt="">
+        <img src="university_picture/pexels-gesel-757855.jpg" alt="">
+        <img src="university_picture/pexels-julia-531358695-29862388.jpg" alt="">
+        <img src="university_picture/pexels-olly-3771074.jpg" alt="">
+        <img src="university_picture/pexels-pixabay-159213.jpg" alt="">
+        <img src="university_picture/pexels-pixabay-159740.jpg" alt="">
+        <img src="university_picture/pexels-pixabay-356065.jpg" alt="">
+    </div>
+    
+    <!-- NOTICE BOARD -->
+    <div class="notice-board-container">
+        <div class="notice-board">
+            <h2>Notice Board</h2>
+            <ul>
+                <li>
+                    <a href="pdfs_file/sample_notice.pdf" target="_blank" class="pdf-link">Notice 1</a>
+                    <button class="print-btn" data-notice="pdfs_file/sample_notice.pdf">Print</button>
+                </li>
+                <li>
+                    Notice 2
+                    <button class="print-btn" data-notice="Notice 2">Print</button>
+                </li>
+                <li>
+                    Notice 3
+                    <button class="print-btn" data-notice="Notice 3">Print</button>
+                </li>
+                <li>
+                    Notice 4
+                    <button class="print-btn" data-notice="Notice 4">Print</button>
+                </li>
+                <li>
+                    Notice 5
+                    <button class="print-btn" data-notice="Notice 5">Print</button>
+                </li>
+            </ul>
+            <div class="button-container">
+                <button id="view-all-btn">View All</button>
+                <button id="print-btn">Print</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEEDBACK BUTTON -->
+    <button id="feedback-btn" onclick="location.href='pages/feedback.html';">FEEDBACK</button>
+
+    <!-- FOOTER STARTS HERE -->
+    <footer>
+        <p>&copy; University</p>
+    </footer> <!-- FOOTER ENDS HERE -->
+
+    <script src="script.js"></script>
+</body>
+</html>
