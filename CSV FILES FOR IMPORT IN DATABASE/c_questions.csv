@@ -1,0 +1,100 @@
+1,"What is the output of the following code? printf(""%d"", 5 + 2 * 3);",21,11,17,Error,11
+2,Which of the following is a valid variable declaration in C?,int 1var;,int var_1;,int@var;,int.var;,int var_1;
+3,Which keyword is used to define a constant in C?,static,define,const,immutable,const
+4,What is the correct syntax for a for loop in C?,for (i = 0; i < 10; i++),loop (i = 0; i < 10; i++),iterate (i = 0 to 10),for i = 1 to 10,for (i = 0; i < 10; i++)
+5,What will be the value of x after this code? int x = 10; x += 5;,10,5,15,20,15
+6,Which of the following is not a valid C data type?,float,real,int,char,real
+7,Which symbol is used to denote a preprocessor directive in C?,@,#,%,&,#
+8,Which function is used to read a single character from the user in C?,gets(),scanf(),getchar(),read(),getchar()
+9,What does the following expression return: sizeof(char)?,1,2,4,Depends on OS,1
+10,Which header file is required for using printf() function in C?,conio.h,stdio.h,stdlib.h,string.h,stdio.h
+11,Which operator is used to access the value at the address stored in a pointer?,*,&,@,#,*
+12,"What will be the output of: printf(""%d"", 10 == 10);",0,1,10,error,1
+13,Which function is used to allocate memory dynamically in C?,malloc(),alloc(),memory(),calloc(),malloc()
+14,Which keyword is used to exit from a loop in C?,continue,stop,exit,break,break
+15,What is the default return type of a function if not specified in C?,int,void,float,char,int
+16,Which function is used to copy strings in C?,strcpy(),strcat(),copy(),memcpy(),strcpy()
+17,Which of the following is a logical operator in C?,==,&&,&,|,&&
+18,"What is the output of: printf(""%c"", 65);",A,B,a,65,A
+19,Which data type is used to store decimal numbers in C?,int,char,float,short,float
+20,"What will be the output of: int a = 5; printf(""%d"", ++a);",5,6,error,undefined,6
+21,Which of these is used to comment a single line in C?,//,/* */,<!-- -->,#,//
+22,Which header file is needed for using malloc() function?,math.h,memory.h,stdlib.h,stdio.h,stdlib.h
+23,Which of the following correctly declares a pointer?,int ptr;,ptr int;,int *ptr;,pointer int;,int *ptr;
+24,"What is the output of: printf(""%d"", 10/3);",3.33,3,3,error,3
+25,Which of these is a valid loop in C?,foreach,while,loop,repeat,while
+26,Which escape character is used for a new line?,\r,\t,\n,\b,\n
+27,"What does the following code print? printf(""%d"", sizeof(0.5));",4,8,2,Depends on compiler,8
+28,What is the maximum number of characters allowed in a variable name in C (according to ANSI standard)?,31,63,255,8,31
+29,Which of the following is a keyword in C?,main,define,volatile,include,volatile
+30,Which operator is used for bitwise AND operation in C?,&&,&,|,^,&
+31,Which loop is guaranteed to execute at least once?,for,while,do-while,None,do-while
+32,Which of the following is a valid string declaration in C?,"char str[] = ""C language"";","string str = ""C language"";","char str = ""C language"";","str = ""C language"";","char str[] = ""C language"";"
+33,Which operator is used to find the remainder in division?,%,/,//,^,%
+34,Which of the following function is used to find length of a string in C?,strlen(),strlength(),length(),len(),strlen()
+35,Which function is used to print output to the screen in C?,scanf(),print(),write(),printf(),printf()
+36,Which of these are storage classes in C?,"auto, register, static, extern","public, private, protected","new, delete, const","int, float, char, double","auto, register, static, extern"
+37,What is the default value of an uninitialized int variable (local scope) in C?,0,null,garbage value,undefined,garbage value
+38,Which format specifier is used for printing float values?,%f,%d,%c,%s,%f
+39,What will be the value of x in: int x = 7 / 2;,3.5,4,3,error,3
+40,Which keyword is used to prevent changes to a variable in C?,const,immutable,final,fixed,const
+41,Which keyword is used to return a value from a function in C?,get,fetch,return,send,return
+42,What is the purpose of the continue statement in a loop?,Terminates the loop,Skips the current iteration,Exits the function,None of the above,Skips the current iteration
+43,"What is the output of: printf(""%d"", 3 == 3);",0,1,TRUE,error,1
+44,Which function is used to read formatted input in C?,print(),get(),scanf(),input(),scanf()
+45,What does the null character '\0' signify in C?,End of loop,End of file,End of string,Space character,End of string
+46,Which of the following is a user-defined data type in C?,int,float,struct,char,struct
+47,Which operator is used to compare two values in C?,==,=,!=,<>,==
+48,Which format specifier is used to print an integer in C?,%i,%d,%int,%n,%d
+49,What is the size of an int on a typical 32-bit system?,2 bytes,4 bytes,8 bytes,1 byte,4 bytes
+50,Which symbol is used to define a macro in C?,@,#,$,&,#
+51,What is the correct syntax to declare a function in C?,function int myFunc(),int myFunc();,int = myFunc(),def myFunc(),int myFunc();
+52,Which operator is used for logical OR in C?,||,|,or,!,||
+53,What is a pointer in C?,A variable that stores address,An integer,A character,An operator,A variable that stores address
+54,"What will be the output of: printf(""%d"", 4 % 3);",1,0,3,4,1
+55,Which is the correct way to declare a constant in C?,#define PI 3.14,const PI = 3.14;,PI = constant(3.14);,fixed PI = 3.14;,#define PI 3.14
+56,What is the file extension of a C source code file?,.cpp,.java,.c,.cs,.c
+57,Which keyword is used to define a structure in C?,class,struct,object,package,struct
+58,Which function is used to dynamically deallocate memory in C?,free(),delete(),remove(),clear(),free()
+59,"What is the output of: printf(""%c"", 66);",A,B,b,C,B
+60,What is the use of break statement in C?,Exit loop,Restart loop,Pause loop,None,Exit loop
+61,Which is a valid C identifier?,1var,_value,void,int,_value
+62,How many bytes are there in a double on 64-bit system?,4,8,2,16,8
+63,Which operator is used to get the address of a variable?,*,&,%,$,&
+64,Which symbol is used to separate multiple statements in a for loop?,",",;,.,->,;
+65,What is the purpose of typedef in C?,Rename data types,Define macros,Allocate memory,Declare constants,Rename data types
+66,Which format specifier is used for characters?,%c,%ch,%s,%char,%c
+67,Which operator has the highest precedence in C?,*,+,(),&&,()
+68,"What is the output of: printf(""%d"", 2 == 3);",1,0,TRUE,FALSE,0
+69,Which is not a valid loop control statement in C?,break,continue,pass,goto,pass
+70,Which is the default access modifier in C?,private,public,protected,Not applicable,Not applicable
+71,How many times will the loop run: for(i=0; i<5; i++)?,4,5,6,0,5
+72,"What is the output of: printf(""%d"", 10 >> 1);",20,5,2,1,5
+73,Which function is used to compare strings in C?,strcmp(),strcomp(),compare(),strcompare(),strcmp()
+74,What is the return type of sizeof operator?,int,float,long,unsigned int,unsigned int
+75,Which keyword is used to define an enumeration?,enum,enums,define,list,enum
+76,Which header file is required to use string functions?,stdio.h,string.h,stdlib.h,conio.h,string.h
+77,What is the size of a pointer on a 64-bit system?,4,8,2,16,8
+78,What does fopen() function return if file not found?,1,0,N/A,EOF,N/A
+79,Which standard library function can convert a string to integer?,itoa(),atoi(),convert(),strtoi(),atoi()
+80,Which loop is best suited when the number of iterations is known?,while,do-while,for,goto,for
+81,Which function is used to close a file in C?,close(),end(),fclose(),exit(),fclose()
+82,Which format specifier is used for long integers?,%l,%li,%ld,%int,%ld
+83,Which operator is used to dereference a pointer?,&,@,*,^,*
+84,What is the result of: 5 && 0?,1,0,TRUE,undefined,0
+85,Which function is used to move file pointer to a specific location?,fseek(),ftell(),fmove(),rewind(),fseek()
+86,Which symbol is used to denote preprocessor commands?,$,#,&,@,#
+87,"What will be the output of: printf(""%s"", ""Hello""[1]);",H,e,ello,error,e
+88,Which is not a valid C keyword?,register,typedef,macro,extern,macro
+89,What is the range of int in C (typically)?,"-32,768 to 32,767",-2^31 to 2^31-1,"0 to 65,535",0 to 255,-2^31 to 2^31-1
+90,What is the maximum number of arguments a function in C can have?,127,255,No limit,16,No limit
+91,Which function is used to concatenate two strings?,stradd(),strcat(),append(),strjoin(),strcat()
+92,What is an array in C?,Collection of same type elements,Pointer to pointer,List of pointers,String only,Collection of same type elements
+93,Which of the following is true about arrays in C?,Index starts from 1,Size is dynamic,Fixed size,Can store different types,Fixed size
+94,Which keyword is used to jump to a label?,goto,jump,pass,continue,goto
+95,Which format specifier is used for unsigned int?,%d,%u,%i,%x,%u
+96,Which function is used to get the current file pointer position?,ftell(),fget(),fpos(),getpos(),ftell()
+97,Which is the correct way to call a function?,call func();,func;,func(),func();,func();
+98,Which function is used to clear screen (in Turbo C)?,clear(),clrscr(),clean(),reset(),clrscr()
+99,Which storage class keeps variable alive throughout the program?,auto,register,static,extern,static
+100,Which header file is used for memory allocation functions?,string.h,math.h,stdlib.h,stdio.h,stdlib.h
