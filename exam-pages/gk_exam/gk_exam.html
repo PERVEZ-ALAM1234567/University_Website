@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GK EXAM</title>
+    <link rel="stylesheet" href="gk_exam.css">  
+</head>
+<body>
+    <header>
+        <div class="logo">UNIVERSITY</div>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../pages/about.html">About us</a></li>
+                <li><a href="../../pages/courses.html">Courses</a></li>
+                <li><a href="../../pages/service.html">Services</a></li>
+                <li><a href="../../pages/contact.html">Contact</a></li>
+                <li><a href="../../exam-pages/exam.html">Exam</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <p>YOU ARE GIVING GK EXAM</nav></p>
+    <h1>GK EXAM</h1>
+    <div id="questions">
+        <p>Loading questions...</p>
+    </div>
+
+    <button id="next" style="display: none;">SUBMIT & NEXT</button>
+    <div id="result" style="display: none;"></div>
+
+    <script src="gk_exam.js"></script>
+    <script>
+        function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
