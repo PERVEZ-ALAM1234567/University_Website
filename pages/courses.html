@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+    <!-- HEADER STARTS HERE -->
+    <header>
+        <div class="logo">UNIVERSITY</div>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About us</a></li>
+                <li><a href="../pages/courses.html">Courses</a></li>
+                <li><a href="../pages/service.html">Services</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a href="../exam-pages/exam.html">Exam</a></li>
+            </ul> 
+        </nav>
+    </header> 
+    <!-- HEADER ENDS HERE -->
+
+    <!-- COURSES SECTION STARTS HERE -->
+    <div class="courses-container">   
+        <div class="course-card">
+            <img src="../course-pic\pexels-jeswin-3781346.jpg" alt="Course Image">
+            <h3>SCIENCE (Honours & general)(Bachelor & masters)</h3>
+            <p>Learn the fundamentals of Science, with every aspects</p>
+            <button>Learn More</button>
+        </div>
+        
+        <div class="course-card">
+            <img src="../course-pic/commerce.JPG" alt="Course Image">
+            <h3>COMMERCE (Honours & general)(Bachelor & masters)</h3>
+            <p>Learn the fundamentals of Commerce, including Accounting, Cost and Tax and many more</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="course-card">
+            <img src="../course-pic\pexels-elitistczar-2691663.jpg" alt="Course Image">
+            <h3>Arts (Honours & general)(Bachelor & masters)</h3>
+            <p>Learn the fundamentals of Arts, including History, Geography, Polity, Economics and many more.</p>
+            <button>Learn More</button>
+        </div>  
+        <div class="course-card">
+            <img src="../course-pic\pexels-czapp-arpad-3647289-11176811.jpg" alt="Course Image">
+            <h3>Civil Engineering</h3>
+            <p>Learn the fundamentals of Civil Engineering.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="course-card">
+            <img src="../course-pic\mecanical.JPG" alt="Course Image">
+            <h3>Mechanical Engineering</h3>
+            <p>Learn the fundamentals of Mechanical Engineering.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="course-card">
+            <img src="../course-pic\pexels-followingnyc-12385302.jpg" alt="Course Image">
+            <h3>Architechture</h3>
+            <p>Learn the fundamentals of Architechture.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="course-card">
+            <img src="../course-pic/html-css-collage-concept-with-person.jpg" alt="Course Image">
+            <h3>Web Development</h3>
+            <p>Learn the fundamentals of web development.</p>
+            <button>Learn More</button>
+        </div>
+          
+    </div>
+    <!-- COURSES SECTION ENDS HERE -->
+
+    <!-- FOOTER STARTS HERE -->
+    <footer>
+        <p>&copy; 2025 University</p>
+    </footer> 
+    <!-- FOOTER ENDS HERE -->
+    <script>
+        function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
+
+
