@@ -26,13 +26,6 @@ A modern, fully responsive university website designed to serve students, facult
 
 ## 📬 Contact
 
-**Your Name**  
-📧 yourname@example.com  
-🌐 [LinkedIn](https://linkedin.com/in/yourprofile)  
-💻 [GitHub](https://github.com/yourgithub)
-
-## 📬 Contact
-
 For questions, collaborations, or customizations, feel free to reach out:
 
 **Name:** **Pervez Alam**   
