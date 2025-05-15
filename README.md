@@ -4,7 +4,7 @@ A modern, fully responsive university website designed to serve students, facult
 
 ## 📸 Screenshots
 
-![Screenshot (316)](https://github.com/user-attachments/assets/91ced414-8918-485d-8c9b-90f26e97b38e)
+![Screenshot (316)](https://github.com/user-attachments/assets/8981036e-9319-4ed8-9e8e-cbc88b343eb4)
 
 ## 🚀 Features
 
